@@ -1,2 +1,2 @@
 release: sh -c 'python manage.py migrate && python manage.py loaddata initial_catalog_data.json'
-web: gunicorn tugas2.wsgi --log-file -
+web: gunicorn pudding-tugas2-pbp.wsgi --log-file -
