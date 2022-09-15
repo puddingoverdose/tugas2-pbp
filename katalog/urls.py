@@ -4,5 +4,5 @@ from .views import *
 app_name = 'katalog'
 
 urlpatterns = [
-    path('', show_catalog, names='show_catalog'),
+    path('', show_catalog),
 ]
