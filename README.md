@@ -8,13 +8,6 @@ virtual environment digunakan supaya development project yang menggunakan virtua
 >Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
 1. Mengimpor model CatalogItem dari katalog.models.py lalu membuat fungsi show_catalogue pada katalog.views.py yang menyajikan object dari CatalogItem dalam data_catalogue beserta name dan student_id dimana akan dirender kepada katalog.html
 
-      def show_catalog(request):
-         data_catalogue = CatalogItem.objects.all()
-         context = {
-            'list_katalog' : data_catalogue,
-            'name' : "Ridho Mulia",
-            'student_id': "2006597866"
-         }
-         return render(request, 'katalog.html', context)
-
 2. Membuat katalog.urls.py dimana dari library django.urls diimpor path dan juga mengimpor katalog.views.py dimana dibuat variabel urlpatterns untuk menyajikan katalog.views.py pada url ''
+
+3.
