@@ -4,6 +4,8 @@ from .models import *
 def show_catalog(request):
     data_catalogue = CatalogItem.objects.all()
     context = {
-        'list_katalog' : data_catalogue
+        'list_katalog' : data_catalogue,
+        'name' : "Ridho Mulia",
+        'student_id': "2006597866"
     }
     return render(request, 'katalog.html', context)
