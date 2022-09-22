@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+  <table>
+    <tr>
+      <th>Watched</th>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release Date</th>
+      <th>Review</th>
+    </tr>
+    {% for watchlist in list_watchlist %}
+    <tr>
+    <th>{{watchlist.watched}}</th>
+    <th>{{watchlist.title}}</th>
+      <th>{{watchlist.rating}}</th>
+      <th>{{watchlist.release_date}}</th>
+      <th>{{watchlist.review}}</th>
+    </tr>
+    {% endfor %}
+  </table>
+
+ {% endblock content %}
